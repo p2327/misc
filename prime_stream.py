@@ -65,9 +65,10 @@ def prime_stream(first):
 
 def first_k(s, k):
 	"""Returns the k-th element of a Stream.
-  
-  first_k(prime_stream(2), 3)
-  >>> Stream(5, <...>)"""
+	
+	first_k(prime_stream(2), 3)
+	>>> Stream(5, <...>)
+	"""
     while s is not Stream.empty and k > 1:
         s, k = s.rest, k-1
     return s
