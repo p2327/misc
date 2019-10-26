@@ -28,7 +28,8 @@ def memo(f):
             
 cache = {}   
 def prime_stream(first):
-    """A stream of prime numbers.
+    """
+    A stream of prime numbers.
     
     prime_stream(2)
     >>> Stream(2, <...>)
@@ -64,7 +65,8 @@ def prime_stream(first):
     return cache[first]
 
 def first_k(s, k):
-	"""Returns the k-th element of a Stream.
+	"""
+	Returns the k-th element of a Stream.
 	
 	first_k(prime_stream(2), 3)
 	>>> Stream(5, <...>)
